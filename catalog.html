@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <title>Sedona</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#">Информация</a>
+      <a href="#"> Фото и видео</a>
+      <a href="index.html"><img src="img/logo.svg"></a>
+      <a href="#">Карта штата</a>
+      <a> Гостиницы</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Поиск гостиницы</h1>
+    <section>
+      <h2>Фильтр гостиниц</h2>
+      <form method="post" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>ИНФРАСТРУКТУРА:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="filter-pool" checked>
+              <label for="filter-pool">БАССЕЙН</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="filter-parking">
+              <label for="filter-parking">ПАРКОВКА</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wifi" id="filter-wifi">
+              <label for="filter-wifi">WI-FI</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>ТИП ЖИЛЬЯ:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">ГОСТИНИЦА</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">МОТЕЛЬ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="filter-apartments" checked>
+              <label for="filter-apartments">АПАРТАМЕНТЫ</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>СТОИМОСТЬ В СУТКИ:</legend>
+          <span>ОТ</span>
+          <input type="number" name="min-price" value="0">
+          <span>ДО</span>
+          <input type="number" name="max-price" value="3000">
+          <p><input type="range" min="0" max="3000" step="1" value="2000"> </p>
+          <button type="submit">ПОКАЗАТЬ</button>
+        </fieldset>
+      </form>
+    </section>
+    <section>
+      <h2>Каталог гостиниц</h2>
+
+      <p>НАЙДЕНО: 3</p>
+      <fieldset>
+        <legend>СОРТИРОВКА:</legend>
+        <a>ПО ЦЕНЕ</a>
+        <a href="#">ПО ТИПУ</a>
+        <a href="#">ПО РЕЙТИНГУ</a>
+        <a><img src="img/icon/icon-up-dir.png"></a>
+        <a href="#"><img src="img/icon/icon-down-dir.png"></a>
+      </fieldset>
+    </section>
+    <section>
+      <ul>
+        <li>
+          <img src="img/Layer 21.png">
+          <h3>AMARA RESORT & SPA</h3>
+          <span>ГОСТИНИЦА</span>
+          <span>ОТ 4000 ₽</span>
+          <p><a href="#">ПОДРОБНЕЕ</a>
+            <a href="#">ЗАБРОНИРОВАТЬ</a>
+          </p>
+          <img src="img/icon/star.png">
+          <img src="img/icon/star.png">
+          <img src="img/icon/star.png">
+          <img src="img/icon/star.png">
+          <p>РЕЙТИНГ: 8,5</p>
+        </li>
+        <li>
+          <img src="img/Layer 89 copy.png">
+          <h3>DESERT QUAIL INN</h3>
+          <span>МОТЕЛЬ</span>
+          <span>ОТ 3000 ₽</span>
+          <p><a href="#">ПОДРОБНЕЕ</a>
+            <a href="#">ЗАБРОНИРОВАТЬ</a>
+          </p>
+          <img src="img/icon/star.png">
+          <img src="img/icon/star.png">
+          <img src="img/icon/star.png">
+          <p>РЕЙТИНГ: 8,9</p>
+        </li>
+        <li>
+          <img src="img/Rectangle.png">
+          <h3>VILLAS AT POCO DIABLO</h3>
+          <span>АПАРТАМЕНТЫ</span>
+          <span>ОТ 2000 ₽</span>
+          <p><a href="#">ПОДРОБНЕЕ</a>
+            <a href="#">ЗАБРОНИРОВАТЬ</a>
+          </p>
+          <img src="img/icon/star.png">
+          <img src="img/icon/star.png">
+          <p>РЕЙТИНГ: 9,2</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <p>#VISITSEDONA</p>
+      <a href="tel:+78005558628">+7 800 555-86-28</a>
+    </section>
+    <section>
+      <ul>
+        <li>
+          <a href="#">Твиттер</a>
+        </li>
+        <li>
+          <a href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a href="#">Ютуб</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <span>WEBSITE BY</span>
+      <a href=https://htmlacademy.ru/intensive/htmlcss>
+        <img src="img/logo_htmlacademy.png">
+      </a>
+    </section>
+  </footer>
+</body>
