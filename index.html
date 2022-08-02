@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial scale=1">
   <title>Sedona</title>
+  <link rel="icon" href="favicon@32.ico"> 
+  <link rel="icon" href="img/icon/favicon/icon@16.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -12,14 +16,13 @@
     <nav>
       <a href="#">Информация</a>
       <a href="#"> Фото и видео</a>
-      <a><img src="img/logo.svg"></a>
+      <a><img src="img/logo.svg" alt="Логотип Седона" width="138" heigth="70"></a>
       <a href="#">Карта штата</a>
       <a href="catalog.html"> Гостиницы</a>
     </nav>
   </header>
   <main>
-    <section>
-
+    <section class="welcome">
       <p>
         WELCOME<br>
         to the gorgeous
@@ -41,28 +44,28 @@
           <p>— №1 —</p>
           <p>Седона — не аттракцион для туристов, там<br>
             течёт своя жизнь</p>
-          <img src="img/image.png">
+          <img src="img/real-city.jpg" alt="Архитектура городка Седона" width="800" heigth="256">
         </li>
         <li>
-          <img src="img/icon/icon-1.png" width="75" height="72">
+          <img src="img/icon/house-icon.svg" alt="Иконка дома" width="75" height="72">
           <h3>ЖИЛЬЁ</h3>
           <p>Рекомендуем пожить в настоящем<br>
             мотеле, всё как в кино!</p>
         </li>
         <li>
-          <img src="img/icon/icon-2.png">
+          <img src="img/icon/burger-icon.svg" alt="Иконка бургера" width="75" height="70">
           <h3>ЕДА</h3>
           <p>Всегда заказывайте фирменный бургер,<br>
             вы не разочаруетесь!</p>
         </li>
         <li>
-          <img src="img/icon/icon-3.png">
+          <img src="img/icon/gift-icon.svg" alt="Иконка подарка" width="64" height="77">
           <h3>СУВЕНИРЫ</h3>
           <p>Не только китайского, но и местного<br>
             производства!</p>
         </li>
         <li>
-          <img src="img/image (1).png" width="800" height="256">
+          <img src="img/devils-bridge.jpg" alt="Мост дьявола" width="800" height="256">
           <h3>ТАМ ЕСТЬ<br>
             МОСТ ДЬЯВОЛА</h3>
           <p>— №2 —</p>
@@ -109,11 +112,19 @@
         </label>
         <label>
           Взрослые:
-          <input type="number" name="adult-amount" value="2">
+          <div>
+            <button type="button"><img src="img/icon/minus-icon.svg" alt="уменьшить"></button>
+            <input type="number" name="adult-amount" value="2">
+            <button type="button"><img src="img/icon/plus-icon.svg" alt="увеличить"></button>
+          </div>  
         </label>
         <label>
           Дети:
-          <input type="number" name="children-amount" value="0">
+          <div>
+            <button type="button"><img src="img/icon/minus-icon.svg" alt="уменьшить"></button>
+            <input type="text" name="children-amount" value="0">
+            <button type="button"><img src="img/icon/plus-icon.svg" alt="увеличить"></button>
+          </div>  
         </label>
         <button type="submit">НАЙТИ</button>
       </form>
@@ -131,13 +142,19 @@
     <section>
       <ul>
         <li>
-          <a href="#">Твиттер</a>
+          <div class="cites">
+            <a href="http://twitter.com"><img src="img/icon/twitter-icon.svg" alt="иконка твиттера" width="17" height="17"></a>
+          </div>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <div class="cites">
+            <a href="#"><img src="img/icon/fb-icon.svg" alt="иконка фейсбука" width="17" height="17"></a>
+          </div>  
         </li>
         <li>
-          <a href="#">Ютуб</a>
+          <div class="cites">
+            <a href="#"><img src="img/icon/youtube-icon.svg" alt="иконка ютуба" width="17" height="17"></a>
+          </div>
         </li>
       </ul>
     </section>

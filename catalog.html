@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial scale=1">
   <title>Sedona</title>
+  <link rel="icon" href="favicon@32.ico"> 
+  <link rel="icon" href="img/icon/favicon/icon@16.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -12,14 +16,14 @@
     <nav>
       <a href="#">Информация</a>
       <a href="#"> Фото и видео</a>
-      <a href="index.html"><img src="img/logo.svg"></a>
+      <a href="index.html"><img src="img/logo.svg" alt="Логотип Седона"></a>
       <a href="#">Карта штата</a>
       <a> Гостиницы</a>
     </nav>
   </header>
   <main>
     <h1>Поиск гостиницы</h1>
-    <section>
+    <section class="filter">
       <h2>Фильтр гостиниц</h2>
       <form method="post" action="https://echo.htmlacademy.ru">
         <fieldset>
@@ -68,7 +72,7 @@
       </form>
     </section>
     <section>
-      <h2>Каталог гостиниц</h2>
+      <h2>Сортировка</h2>
 
       <p>НАЙДЕНО: 3</p>
       <fieldset>
@@ -81,44 +85,45 @@
       </fieldset>
     </section>
     <section>
+      <h2>Каталог гостиниц</h2>
       <ul>
         <li>
-          <img src="img/Layer 21.png">
+          <img src="img/Amara-photo.jpg" alt="AMARA RESORT & SPA" width="135" height="90">
           <h3>AMARA RESORT & SPA</h3>
           <span>ГОСТИНИЦА</span>
           <span>ОТ 4000 ₽</span>
           <p><a href="#">ПОДРОБНЕЕ</a>
             <a href="#">ЗАБРОНИРОВАТЬ</a>
           </p>
-          <img src="img/icon/star.png">
-          <img src="img/icon/star.png">
-          <img src="img/icon/star.png">
-          <img src="img/icon/star.png">
+          <img src="img/icon/star-icon.png">
+          <img src="img/icon/star-icon.png">
+          <img src="img/icon/star-icon.png">
+          <img src="img/icon/star-icon.png">
           <p>РЕЙТИНГ: 8,5</p>
         </li>
         <li>
-          <img src="img/Layer 89 copy.png">
+          <img src="img/Desert-photo.jpg" alt="DESERT QUAIL INN" width="135" height="90">
           <h3>DESERT QUAIL INN</h3>
           <span>МОТЕЛЬ</span>
           <span>ОТ 3000 ₽</span>
           <p><a href="#">ПОДРОБНЕЕ</a>
             <a href="#">ЗАБРОНИРОВАТЬ</a>
           </p>
-          <img src="img/icon/star.png">
-          <img src="img/icon/star.png">
-          <img src="img/icon/star.png">
+          <img src="img/icon/star-icon.png">
+          <img src="img/icon/star-icon.png">
+          <img src="img/icon/star-icon.png">
           <p>РЕЙТИНГ: 8,9</p>
         </li>
         <li>
-          <img src="img/Rectangle.png">
+          <img src="img/Villas-photo.jpg" alt="VILLAS AT POCO DIABLO" width="135" height="90">
           <h3>VILLAS AT POCO DIABLO</h3>
           <span>АПАРТАМЕНТЫ</span>
           <span>ОТ 2000 ₽</span>
           <p><a href="#">ПОДРОБНЕЕ</a>
             <a href="#">ЗАБРОНИРОВАТЬ</a>
           </p>
-          <img src="img/icon/star.png">
-          <img src="img/icon/star.png">
+          <img src="img/icon/star-icon.png">
+          <img src="img/icon/star-icon.png">
           <p>РЕЙТИНГ: 9,2</p>
         </li>
       </ul>
@@ -132,13 +137,19 @@
     <section>
       <ul>
         <li>
-          <a href="#">Твиттер</a>
+          <div class="cites">
+            <a href="http://twitter.com"><img src="img/icon/twitter-icon.svg" alt="иконка твиттера" width="17" height="17"></a>
+          </div>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <div class="cites">
+            <a href="#"><img src="img/icon/fb-icon.svg" alt="иконка фейсбука" width="17" height="17"></a>
+          </div>  
         </li>
         <li>
-          <a href="#">Ютуб</a>
+          <div class="cites">
+            <a href="#"><img src="img/icon/youtube-icon.svg" alt="иконка ютуба" width="17" height="17"></a>
+          </div>
         </li>
       </ul>
     </section>
