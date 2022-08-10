@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial scale=1">
   <title>Sedona</title>
-  <link rel="icon" href="favicon@32.ico"> 
+  <link rel="icon" href="favicon@32.ico">
   <link rel="icon" href="img/icon/favicon/icon@16.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -16,27 +16,25 @@
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
-      <a href="#">Информация</a>
-      <a href="#"> Фото и видео</a>
-      <a class="main-header-logo"><img src="img/logo.svg" alt="Логотип Седона" width="138" heigth="70"></a>
-      <a href="#">Карта штата</a>
-      <a href="catalog.html"> Гостиницы</a>
+      <ul class="site-navigation">
+        <li><a href="#">Информация</a></li>
+        <li><a href="#"> Фото и видео</a></li>
+        <li><a class="main-header-logo"><img src="img/logo.svg" alt="Логотип Седона" width="138" heigth="70"></a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="catalog.html"> Гостиницы</a></li>
+      </ul> 
     </nav>
   </header>
   <main class="container">
     <section class="welcome">
-      <img 
-        src="img/background.png"
-        alt="Welcome to the gorgeous. Sedona: 'Because the Grand Canyon sucks!'"
-        width="1200"
-        height="509"
-      >
+      <img src="img/background.png" alt="Welcome to the gorgeous. Sedona: 'Because the Grand Canyon sucks!'"
+        width="1200" height="509">
     </section>
     <section class="info">
       <h2>О городке</h2>
-      <p>СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
+      <p class="info info-title">СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
         ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
-      <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+      <p class="info info-reasons">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
     </section>
     <section class="features">
       <h2>Преимущества</h2>
@@ -46,8 +44,8 @@
           <p>— №1 —</p>
           <p>Седона — не аттракцион для туристов, там<br>
             течёт своя жизнь</p>
-          <img src="img/real-city.jpg" alt="Архитектура городка Седона" width="800" heigth="256">
         </li>
+        <img src="img/real-city.jpg" alt="Архитектура городка Седона" width="800" heigth="256">
         <li class="feature-item">
           <img src="img/icon/house-icon.svg" alt="Иконка дома" width="75" height="72">
           <h3>ЖИЛЬЁ</h3>
@@ -66,8 +64,8 @@
           <p>Не только китайского, но и местного<br>
             производства!</p>
         </li>
+        <img src="img/devils-bridge.jpg" alt="Мост дьявола" width="800" height="256">
         <li class="feature-item">
-          <img src="img/devils-bridge.jpg" alt="Мост дьявола" width="800" height="256">
           <h3>ТАМ ЕСТЬ<br>
             МОСТ ДЬЯВОЛА</h3>
           <p>— №2 —</p>
@@ -99,36 +97,32 @@
     </section>
     <section class="appointment">
       <h2>Поиск гостиницы</h2>
-      <p>ЗАИНТЕРЕСОВАЛИСЬ?</p>
+      <h3>ЗАИНТЕРЕСОВАЛИСЬ?</h3>
       <p class="appointment-info">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
         И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-      <a class="button appointment-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+      <button type="button" class="button appointment-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
     </section>
     <section class="modal modal-search">
       <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
         <label class="appointment-item">
           Дата заезда:
           <input type="date" name="date-in" date="2017-04-24" value="2017-04-24">
-        </label>
+        </label><br>
         <label class="appointment-item">
           Дата выезда:
           <input type="date" name="date-out" date="2017-08-04" value="2017-08-04">
-        </label>
+        </label><br>
         <label class="appointment-item">
           Взрослые:
-          <div>
-            <button type="button"><img src="img/icon/minus-icon.svg" alt="уменьшить"></button>
+            <!-- <button type="button"><img src="img/icon/minus-icon.svg" alt="уменьшить"></button> -->
             <input type="number" name="adult-amount" value="2">
-            <button type="button"><img src="img/icon/plus-icon.svg" alt="увеличить"></button>
-          </div>  
+            <!-- <button type="button"><img src="img/icon/plus-icon.svg" alt="увеличить"></button> -->
         </label>
         <label class="appointment-item">
           Дети:
-          <div>
-            <button type="button"><img src="img/icon/minus-icon.svg" alt="уменьшить"></button>
-            <input type="text" name="children-amount" value="0">
-            <button type="button"><img src="img/icon/plus-icon.svg" alt="увеличить"></button>
-          </div>  
+            <!-- <button type="button"><img src="img/icon/minus-icon.svg" alt="уменьшить"></button> -->
+            <input type="number" name="children-amount" value="0">
+            <!-- <button type="button"><img src="img/icon/plus-icon.svg" alt="увеличить"></button> -->
         </label>
         <button class="button modal-button" type="submit">НАЙТИ</button>
       </form>
@@ -146,38 +140,25 @@
     <section class="footer-social">
       <ul>
         <li>
-            <a
-              class="social-button"
-              href="http://twitter.com">
-              <img
-                src="img/icon/twitter-icon.svg"
-                alt="иконка твиттера"
-                width="17"
-                height="17">
+          <div class="social-button">
+            <a href="http://twitter.com">
+              <img src="img/icon/twitter-icon.svg" alt="иконка твиттера" width="17" height="17">
             </a>
+          </div>  
         </li>
         <li>
-            <a
-              class="social-button"
-              href="#"
-            >
-              <img
-                src="img/icon/fb-icon.svg"
-                alt="иконка фейсбука"
-                width="17"
-                height="17">
-            </a> 
+          <div class="social-button">
+            <a href="#">
+              <img src="img/icon/fb-icon.svg" alt="иконка фейсбука" width="17" height="17">
+            </a>
+          </div>
         </li>
         <li>
-            <a 
-              class="social-button" 
-              href="#">
-              <img 
-                src="img/icon/youtube-icon.svg" 
-                alt="иконка ютуба" 
-                width="17" 
-                height="17">
+          <div class="social-button">
+            <a href="#">
+              <img src="img/icon/youtube-icon.svg" alt="иконка ютуба" width="17" height="17">
             </a>
+          </div>  
         </li>
       </ul>
     </section>
